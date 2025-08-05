@@ -66,12 +66,30 @@ The application is built around a few core React concepts:
 
 -   🧠 **State Management**: The `Home.tsx` component uses `useState` to manage the list of activities (`data`) and the total hours.
 
--   🏗️ **Component Structure**:
-    -   `App.tsx`: The main entry point that renders the `Home` page.
-    -   `pages/Home.tsx`: The main page component that holds the application logic, state, and renders the form and chart.
-    -   `components/ui/TimeForm.tsx`: A form for users to input their activity, hours, and select a color.
-    -   `components/TimeChart.tsx`: A component that takes the activity data and renders a pie chart using `react-chartjs-2`.
+-   🏗️ **File Structure**: The project is organized with a clear separation of concerns. Here are the key files:
+    ```
+    src/
+    ├── App.tsx             # Main application entry point
+    ├── components/
+    │   ├── TimeChart.tsx   # Renders the pie chart
+    │   └── ui/
+    │       └── TimeForm.tsx  # The form for adding new activities
+    └── pages/
+        └── Home.tsx        # Main page with state logic and layout
+    ```
 
 -   💾 **Data Persistence**: The `useEffect` hook in `Home.tsx` is used to:
     1.  Load saved activities from `localStorage` when the component mounts.
     2.  Save the current list of activities to `localStorage` whenever the `data` state changes. This ensures that your tracked time is not lost between sessions.
+
+---
+
+## 🌟 Future Improvements
+
+Here are some ideas for future enhancements:
+
+-   **Delete Activities**: Add a feature to remove an activity from the list and the chart.
+-   **Edit Activities**: Allow users to edit the name and hours of an existing activity.
+-   **Date Picker**: Implement a calendar to view and log time for different days.
+-   **Data Export**: Add functionality to export the time tracking data as a CSV or JSON file.
+-   **Improved UI/UX**: Enhance the user interface with animations, better layouts, and more intuitive controls.

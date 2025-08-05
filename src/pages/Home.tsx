@@ -1,6 +1,6 @@
 import TimeForm from "@/components/ui/TimeForm"
 import { useEffect, useState } from "react";
-import TimeChart from "@/components/TimeChart";
+import TimeChart from "@/components/ui/TimeChart";
 
 const STORAGE_KEY = "tracked_activities";
 
