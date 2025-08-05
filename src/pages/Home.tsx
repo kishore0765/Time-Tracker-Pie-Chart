@@ -25,7 +25,7 @@ const Home = () => {
 
     return (
         <div className="max-w-md mx-auto p-6 mt-10 bg-white rounded shadow space-y-6">
-            <h1 className="text-2xl font-bold ">Time Tracker</h1>
+            <h1 className="text-2xl font-bold "> ⏱ Time Tracker</h1>
             <TimeForm onAdd={handleAdd} />
             <div className="text-sm">
                 <strong>Total Hours:</strong> {totalHours}

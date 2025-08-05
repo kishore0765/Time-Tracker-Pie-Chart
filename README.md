@@ -1,4 +1,4 @@
-# 🕒 Time Tracker Pie Chart App 🥧
+# ⏱ Time Tracker Pie Chart App 
 
 This is a simple yet effective time tracking application that allows users to log their daily activities and the hours spent on each, visualizing the data in an interactive pie chart. The application persists data using the browser's local storage.
 
